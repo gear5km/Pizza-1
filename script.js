@@ -57,7 +57,6 @@
           this.price=flavour[1];
       }
 
-      document.getElementById("pizzaFlavour").innerHTML=flavourSelect[0];
       
       function comp(){
         alert("working pizzaObj Button")
@@ -131,10 +130,6 @@ $(document).ready(function(){
     //User Selection Compilation Script
 
     $('button#object-button-1').click(function comp(){})
-
-
-    
-
 
 
 })
