@@ -16,12 +16,36 @@
       flavourSelect=["flavour1", 100];
     }
 
+    function flavour2(){
+      flavourSelect=["flavour2", 200];
+    }
+
+    function flavour3(){
+      flavourSelect=["flavour3", 300];
+    }
+
     function size1(){
       sizeSelect=["size1",100];
     }
 
+    function size2(){
+      sizeSelect=["size2",200];
+    }
+
+    function size3(){
+      sizeSelect=["size3",300];
+    }
+
     function crust1(){
       crustSelect=["crust1",100];
+    }
+
+    function crust2(){
+      crustSelect=["crust2",200];
+    }
+
+    function crust3(){
+      crustSelect=["crust3",300];
     }
    
   //pizzaObject constructor
@@ -55,23 +79,55 @@ $(document).ready(function(){
 
       $(".pizza-object").slideDown();
     })
+
+    //Flavour Button Scripts
       
     $('button#flavour-button-1').click(function(){
       //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
-      //flavourSelect="flavour1";
       flavour1();
-      //alert(flavourSelect);
     })
+
+    $('button#flavour-button-2').click(function(){
+      //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
+      flavour2();
+    })
+
+    $('button#flavour-button-3').click(function(){
+      //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
+      flavour3();
+    })
+
+    //Size Button Scripts
 
     $('button#size-button-1').click(function(){
       size1();
-      //alert(sizeSelect);
     })
+
+    
+    $('button#size-button-2').click(function(){
+      size2();
+    })
+
+    
+    $('button#size-button-3').click(function(){
+      size3();
+    })
+
+    //Crust Button Scripts
 
     $('button#crust-button-1').click(function(){
       crust1();
-      //alert(crustSelect);
     })
+
+    $('button#crust-button-2').click(function(){
+      crust2();
+    })
+
+    $('button#crust-button-3').click(function(){
+      crust3();
+    })
+
+    //User Selection Compilation Script
 
     $('button#object-button-1').click(function comp(){})
 
