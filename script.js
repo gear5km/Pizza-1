@@ -68,7 +68,16 @@
 
     //Method that displays user Selection  
 
+    function pizzaOptions(){
 
+      var appendSec=document.getElementById("selection1");
+      //let appendor=document.createTextNode(flavourSelect[0], sizeSelect[0], crustSelect[0])
+      let appendor=document.createElement('p')
+      appendor.setAttribute()
+
+      appendSec.appendChild(appendor);
+  
+      }
 
 
 
@@ -136,13 +145,14 @@ $(document).ready(function(){
     $('button#object-button-1').click(function comp(){})
 
 
-    var appendSec=document.getElementById("picked1");
 
-    var selector=document.createElement("div");
+   // var selector=document.createElement("div");
+
+   // let appendor=document.createTextNode("TESTING!")
     
-    selector.appendChild()
+    //selector.appendChild(appendor)
 
-    appendSec.appendChild(selector);
+    //.appendChild(selector);
 
 })
 
