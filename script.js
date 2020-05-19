@@ -5,7 +5,7 @@
 
 
 
-    //Creates Variables to Store pizzaObject attributes
+    //Creates Variables to Store pizzaObject attributes (flavour, Size, Crust) and their respective Prices
 
     var flavourSelect=[1];
     var sizeSelect=[1];
@@ -54,7 +54,8 @@
           this.flavour=flavour;
           this.size=size;
           this.crust=crust;
-          this.price=flavour[1];
+          this.price=flavour[1]+size[1]+crust[1];
+          
       }
 
       
@@ -65,7 +66,9 @@
 
       }
 
-      
+    //Method that displays user Selection  
+
+
 
 
 
@@ -85,6 +88,7 @@ $(document).ready(function(){
     $('button#flavour-button-1').click(function(){
       //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
       flavour1();
+      $("#p1image").css("border", "solid red 10px");
     })
 
     $('button#flavour-button-2').click(function(){
@@ -131,6 +135,14 @@ $(document).ready(function(){
 
     $('button#object-button-1').click(function comp(){})
 
+
+    var appendSec=document.getElementById("picked1");
+
+    var selector=document.createElement("div");
+    
+    selector.appendChild()
+
+    appendSec.appendChild(selector);
 
 })
 
