@@ -57,6 +57,7 @@
           this.price=flavour[1];
       }
 
+      document.getElementById("pizzaFlavour").innerHTML=flavourSelect[0];
       
       function comp(){
         alert("working pizzaObj Button")
