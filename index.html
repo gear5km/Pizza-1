@@ -11,6 +11,10 @@
             <div class="container-fluid">
               <nav class="navbar-nav navbar-fixed-top" id="navbar">
                 <ul class="nav-item">
+                  <div class="form-group">
+                    <label for="nameInput">Enter Full Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                  </div>
                   <button type="button" class="btn btn-primary" id="menu-button-1">Start Order</button>
                 </ul>
               </nav>
@@ -24,15 +28,15 @@
                   <div class="row">
                     <div class="col-md-4">
                       <img src="p1.png" width="350px" height="350px" id="p1image">
-                      <button type="button" class="btn btn-primary" id="flavour-button-1">Flavour 1</button>
+                      <button type="button" class="btn btn-secondary" id="flavour-button-1">Flavour 1</button>
                     </div>
                     <div class="col-md-4">
                       <img src="p2.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-primary" id="flavour-button-1">Flavour 2</button>
+                      <button type="button" class="btn btn-secondary" id="flavour-button-2">Flavour 2</button>
                     </div>
                     <div class="col-md-4">
                       <img src="p3.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-primary" id="flavour-button-1">Flavour 3</button>
+                      <button type="button" class="btn btn-secondary" id="flavour-button-3">Flavour 3</button>
                     </div>
                   </div>
                   <BR>
@@ -43,16 +47,16 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="p2.png" width="350px" height="350px">
+                      <h1>Small (25 cm)</h1>
                       <button type="button" class="btn btn-secondary" id="size-button-1">Size 1</button>
                     </div>
                     <div class="col-md-4">
-                      <img src="p2.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-secondary" id="size-button-1">Size 2</button>
+                        <h1>Medium (30 cm)</h1>
+                      <button type="button" class="btn btn-secondary" id="size-button-2">Size 2</button>
                     </div>
                     <div class="col-md-4">
-                      <img src="p2.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-secondary" id="size-button-1">Size 3</button>
+                        <h1>Large (34 cm)</h1>
+                      <button type="button" class="btn btn-secondary" id="size-button-3">Size 3</button>
                     </div>
                   </div>
                   <BR>
@@ -63,16 +67,16 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="p3.png" width="350px" height="350px">
+                        <h1>Thin</h1>
                       <button type="button" class="btn btn-secondary" id="crust-button-1">Crust 1</button>
                     </div>
                     <div class="col-md-4">
-                      <img src="p3.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-secondary" id="crust-button-1">Crust 2</button>
+                        <h1>Crispy</h1>
+                      <button type="button" class="btn btn-secondary" id="crust-button-2">Crust 2</button>
                     </div>
                     <div class="col-md-4">
-                      <img src="p3.png" width="350px" height="350px">
-                      <button type="button" class="btn btn-secondary" id="crust-button-1">Crust 3</button>
+                        <h1>Stuffed</h1>
+                      <button type="button" class="btn btn-secondary" id="crust-button-3">Crust 3</button>
                     </div>
                   </div>
                   <BR>
@@ -88,12 +92,11 @@
                     <div class="row">
                       <div class="col-md-4" id="sec1">
                         <h2>Selection Display</h2>
-                        <h3 id="selection1">NLL</h3>
->                       
+                        <h3 id="selection1"></h3>                       
                       </div>
                       <div class="col-md-4" id="sec2">
                         <h2>Price Display</h2>
-
+                        <h3 id="selection2"></h3>
                       </div>
                     </div>
                     <button type="button" class="btn btn-secondary" id="object-button-1" onclick="comp()">Add Pizza To Order</button>

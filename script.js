@@ -71,16 +71,51 @@
     function pizzaOptions(){
 
       var appendSec=document.getElementById("selection1");
-      //let appendor=document.createTextNode(flavourSelect[0], sizeSelect[0], crustSelect[0])
-      let appendor=document.createElement('p')
-      appendor.setAttribute()
+      let appendor=document.createTextNode(flavourSelect[0])
+      let appendor2=document.createTextNode(sizeSelect[0])
+      let appendor3=document.createTextNode(crustSelect[0])
 
-      appendSec.appendChild(appendor);
-  
+      let appendor4=document.createElement('div')
+      appendor4.setAttribute("id", "appended");
+      //appendor.setAttribute("See:", flavourSelect)
+
+      appendSec.appendChild(appendor4);
+
+      appendor4.appendChild(appendor)
+      appendor4.appendChild(document.createElement("br"));
+      appendor4.appendChild(appendor2)
+      appendor4.appendChild(document.createElement("br"));
+      appendor4.appendChild(appendor3)
+
+      //appendSec.appendChild(appendor);
+      //appendSec.appendChild(appendor2)
+     // appendSec.appendChild(appendor3)
+
+     var appendPrice=document.getElementById("selection2");
+     let priceAppend=document.createTextNode(flavourSelect[1])
+     let priceAppend2=document.createTextNode(sizeSelect[1])
+     let priceAppend3=document.createTextNode(crustSelect[1])
+
+     let priceAppend4=document.createElement('div')
+     priceAppend4.setAttribute("id","priceAppened")
+     
+     appendPrice.appendChild(priceAppend4)
+
+     priceAppend4.appendChild(priceAppend)
+     priceAppend4.appendChild(document.createElement("br"));
+     priceAppend4.appendChild(priceAppend2)
+     priceAppend4.appendChild(document.createElement("br"));
+     priceAppend4.appendChild(priceAppend3)
+     priceAppend4.appendChild(document.createElement("br"));
+
+
+
       }
+  
+      
 
 
-
+//JQuery Animations and Button function assigns
 
 $(document).ready(function(){
 
