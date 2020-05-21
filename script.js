@@ -62,12 +62,14 @@
 
     //Compiles user selection into single pizza object  
       function comp(){
-        alert("working pizzaObj Button")
+        var name=document.getElementById("nameInput").value;
         pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect);
 
-        alert(pizza.price);
 
-        window.prompt()
+
+        alert("Price Total is KES  "+ pizza.price);
+
+        prompt(name, "Please Enter Delivery Address",)
         //pricing();
 
       }
