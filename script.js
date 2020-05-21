@@ -12,6 +12,8 @@
     var crustSelect=[1];
     var pizza;
 
+    //Functions that Assign flavours, sizes and toppings to the variables above based on User Selection
+
     function flavour1(){
       flavourSelect=["flavour1", 100];
     }
@@ -48,7 +50,7 @@
       crustSelect=["crust3",300];
     }
    
-  //pizzaObject constructor
+  //pizzaObject constructor, used to pass user selection to pizzaobject
     function pizzaObject(flavour,size,crust)
       {
           this.flavour=flavour;
@@ -58,17 +60,20 @@
           
       }
 
-      
+    //Compiles user selection into single pizza object  
       function comp(){
         alert("working pizzaObj Button")
         pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect);
 
         alert(pizza.price);
+
+        window.prompt()
         //pricing();
 
       }
 
     //Method that displays user Selection  
+
 
     function pizzaOptions(){
 
@@ -110,7 +115,10 @@
      priceAppend4.appendChild(priceAppend3)
      priceAppend4.appendChild(document.createElement("br"));
 
-
+      var delivery=document.getElementById("delivery").value;
+        if (delivery==true){
+          alert("TB delivered");
+        }
 
       }
   
@@ -175,6 +183,10 @@ $(document).ready(function(){
 
     $('button#crust-button-3').click(function(){
       crust3();
+    })
+
+    $('button#optionsSelect').click(function(){
+        pizzaOptions ()
     })
 
     //User Selection Compilation Script
