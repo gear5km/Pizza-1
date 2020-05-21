@@ -9,15 +9,17 @@
       <body>
           <div class="top-menu">
             <div class="container-fluid">
-              <nav class="navbar-nav navbar-fixed-top" id="navbar">
-                <ul class="nav-item">
-                  <div class="form-group">
-                    <label for="nameInput">Enter Full Name</label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                  </div>
-                  <button type="button" class="btn btn-primary" id="menu-button-1">Start Order</button>
-                </ul>
-              </nav>
+                <nav class="navbar-nav navbar-fixed-top" id="navbar">
+                    <img src="images/Logo.png" width="150px" height="250px" id="logoimage">
+                    <h1>A Domino</h1>
+                    <ul class="nav-item">
+                        <div class="form-group">
+                            <label for="nameInput">Enter Full Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="menu-button-1">Start Order</button>
+                    </ul>
+                </nav>
               <BR>
               <BR>
             </div>
@@ -93,14 +95,18 @@
               <div class="user-selection">
                 <div class="container">
                     <div class="row">
-                      <div class="col-md-4" id="sec1">
+                      <div class="col-md-5" id="sec1">
                         <h2>Selection Display</h2>
                         <h3 id="selection1"></h3>                       
                       </div>
-                      <div class="col-md-4" id="sec2">
+                      <div class="col-md-5" id="sec2">
                         <h2>Price Display</h2>
                         <h3 id="selection2"></h3>
                       </div>
+                    </div>
+                    <div class="col-md-5" id="sec3">
+                      <h2>Pizza Order Complete</h2>
+                      <h3 id="selection3"></h3>
                     </div>
                     <button type="button" class="btn btn-secondary" id="object-button-1" onclick="comp()">Add Pizza To Order</button>
                 </div>

@@ -1,8 +1,12 @@
 
 #navbar{
-  height:300px;
+  height:500px;
   background-color:rgb(0, 204, 255);
   
+}
+
+#logoimage{
+  margin-left:45%;
 }
 
 .form-group{
@@ -67,6 +71,13 @@ h1{
   margin-top:5%;
   margin-left:6%;
   border:3px solid grey;
+}
+
+#sec3{
+  margin-top:5%;
+  margin-left:6%;
+  border:3px solid grey;
+  display:none;
 }
 
 #object-button-1{

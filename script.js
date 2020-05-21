@@ -62,7 +62,9 @@
       function comp(){
         alert("working pizzaObj Button")
         pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect);
-        pricing();
+
+        alert(pizza.price);
+        //pricing();
 
       }
 
