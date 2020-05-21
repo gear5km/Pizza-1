@@ -10,6 +10,7 @@
     var flavourSelect=[1];
     var sizeSelect=[1];
     var crustSelect=[1];
+    var deliverySelect=[1];
     var pizza;
 
     //Functions that Assign flavours, sizes and toppings to the variables above based on User Selection
@@ -56,21 +57,40 @@
           this.flavour=flavour;
           this.size=size;
           this.crust=crust;
-          this.price=flavour[1]+size[1]+crust[1];
+          this.delivery=delivery;
+          this.price=flavour[1]+size[1]+crust[1]+deliverySelect[1];
           
       }
 
     //Compiles user selection into single pizza object  
       function comp(){
         var name=document.getElementById("nameInput").value;
-        pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect);
+        pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect,delivery);
 
 
 
         alert("Price Total is KES  "+ pizza.price);
 
         prompt(name, "Please Enter Delivery Address",)
-        //pricing();
+        
+        $(".pizza-object").slideUp();
+        $(".cart").slideDown();
+
+        var carted=document.getElementById("cart");
+
+        let cartDetails=document.createElement("h3")
+        let cartDetails2=document.createTextNode(flavourSelect[0])
+
+        let cartDetails3=document.createTextNode(pizza.price)
+
+        carted.appendChild(cartDetails);
+        carted.appendChild(document.createElement("br"));
+        carted.appendChild(cartDetails2);
+        carted.appendChild(document.createElement("br"));
+        carted.appendChild(cartDetails3);
+        carted.appendChild(document.createElement("br"));
+
+        
 
       }
 
@@ -118,8 +138,20 @@
      priceAppend4.appendChild(document.createElement("br"));
 
       var delivery=document.getElementById("delivery").value;
-        if (delivery==true){
-          alert("TB delivered");
+        if (delivery=="true"){
+          alert("Pizza Checked to Be delivered");
+
+          deliverySelect=["true",200];
+
+          let deliveryCharge1=document.createTextNode("Delivery Charge")
+          let deliveryCharge2=document.createTextNode(200);
+
+
+          appendor4.appendChild(document.createElement("br"));
+          appendor4.appendChild(deliveryCharge1);
+          priceAppend4.appendChild(deliveryCharge2);
+
+
         }
 
       }
