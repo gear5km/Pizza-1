@@ -12,9 +12,9 @@
     var crustSelect=[1];
     var deliverySelect=[1];
     var pizza;
-
+    /**************************************************************************************************
     //Functions that Assign flavours, sizes and toppings to the variables above based on User Selection
-
+    **************************************************************************************************/
     function flavour1(){
       flavourSelect=["flavour1", 100];
     }
@@ -51,7 +51,10 @@
       crustSelect=["crust3",300];
     }
    
-  //pizzaObject constructor, used to pass user selection to pizzaobject
+    /********************************************************************
+     * pizzaObject constructor, used to pass user selection to pizzaobject
+     * 
+    **********************************************************************/
     function pizzaObject(flavour,size,crust)
       {
           this.flavour=flavour;
@@ -62,12 +65,12 @@
           
       }
 
-    //Compiles user selection into single pizza object  
+      /*******************************************
+      * Compiles user selection into a pizzaObject
+      ********************************************/
       function comp(){
         var name=document.getElementById("nameInput").value;
         pizza = new pizzaObject(flavourSelect,sizeSelect,crustSelect,delivery);
-
-
 
         alert("Price Total is KES  "+ pizza.price);
 
@@ -79,9 +82,8 @@
         var carted=document.getElementById("cart");
 
         let cartDetails=document.createElement("h3")
-        let cartDetails2=document.createTextNode(flavourSelect[0])
-
-        let cartDetails3=document.createTextNode(pizza.price)
+        let cartDetails2=document.createTextNode("Pizza Order:  "+flavourSelect[0])
+        let cartDetails3=document.createTextNode("Price: KES  "+pizza.price)
 
         carted.appendChild(cartDetails);
         carted.appendChild(document.createElement("br"));
@@ -163,16 +165,20 @@
 
 $(document).ready(function(){
 
-    
-
     //Assigns values to attributes upon user selection of buttons
     $("button#menu-button-1").click(function(){
-
-      $(".pizza-object").slideDown();
+      var user=document.getElementById('nameInput').value
+      if(user==''){
+        alert("Please Enter your Name")
+      }
+      else{
+        $(".pizza-object").slideDown();
+      }
     })
 
-    //Flavour Button Scripts
-      
+    /****************************************************************************
+    * Flavour Button Scripts
+    *****************************************************************************/  
     $('button#flavour-button-1').click(function(){
       //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
       flavour1();
@@ -180,16 +186,18 @@ $(document).ready(function(){
     })
 
     $('button#flavour-button-2').click(function(){
-      //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
+
       flavour2();
     })
 
     $('button#flavour-button-3').click(function(){
-      //YOU CANNOT CALL JQuery FUNCTIONS FROM OUTSIDE AND EXPECT A RETURN VALUE!
+
       flavour3();
     })
 
-    //Size Button Scripts
+    /****************************************************************************
+    * Size Button Scripts
+    *****************************************************************************/
 
     $('button#size-button-1').click(function(){
       size1();
@@ -205,7 +213,9 @@ $(document).ready(function(){
       size3();
     })
 
-    //Crust Button Scripts
+    /****************************************************************************
+    * Crust Button Scripts
+    *****************************************************************************/
 
     $('button#crust-button-1').click(function(){
       crust1();
@@ -223,7 +233,9 @@ $(document).ready(function(){
         pizzaOptions ()
     })
 
-    //User Selection Compilation Script
+    /****************************************************************************
+    * User Selection Compilation Script
+    *****************************************************************************/
 
     $('button#object-button-1').click(function comp(){})
 
